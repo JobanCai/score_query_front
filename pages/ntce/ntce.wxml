@@ -1,0 +1,37 @@
+<view>
+    <van-cell-group>
+        <van-field
+            model:value="{{ name }}"
+            clearable
+            label="姓名"
+            placeholder="请输入姓名"
+        />
+
+        <van-field
+            model:value="{{ id_card }}"
+            label="身份证号"
+            placeholder="请输入身份证号码"
+            type="idcard"
+        />
+
+        <!-- 验证码图片使用服务器图片或者本地图片 -->
+        <van-field
+            model:value="{{ yzm }}"
+            label="验证码"
+            icon="../../../../images/1.jpg"
+            bind:click-icon="onYzm"
+        >
+        </van-field>
+
+    </van-cell-group>
+</view>
+
+<view class="query">
+    <van-button type="info" bindtap="onQuery" block>点击查询</van-button>
+</view>
+
+<van-toast id="van-toast" />
+
+<view wx:if="{{isOK}}"> 
+    查询的成绩为:    
+</view>

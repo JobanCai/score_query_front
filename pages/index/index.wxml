@@ -1,0 +1,4 @@
+<van-cell title="教师资格考试" is-link link-type="navigateTo" url="/pages/ntce/ntce" />
+<van-cell title="普通话考试" is-link />
+<van-cell title="计算机等级考试" is-link />
+<van-cell title="待开启" is-link />

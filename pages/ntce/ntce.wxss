@@ -1,0 +1,8 @@
+.query{
+    margin: 20px 10px 10px 10px;
+}
+
+.van-icon.van-icon--image{
+    width: 6em;
+    height: 2em;
+}
