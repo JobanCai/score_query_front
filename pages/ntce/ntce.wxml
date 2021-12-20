@@ -32,6 +32,29 @@
 
 <van-toast id="van-toast" />
 
-<view wx:if="{{isOK}}"> 
-    查询的成绩为:    
+<view style="text-align: center;">
+    <span style="color: red;">注意：成绩仅供参考，实际以官方公布成绩为准</span>
 </view>
+
+<view wx:if="{{isOK}}"> 
+    <view class="container">
+        <span>笔试查询的成绩为:  </span>
+        <table-view 
+        headers="{{writtenTableHeader}}" 
+        data="{{ writtenRow }}" 
+        stripe="{{ stripe }}"
+        border="{{ border }}"
+        />
+        <span>面试查询的成绩为:  </span>
+        <table-view 
+        headers="{{interviewTableHeader}}" 
+        data="{{ interviewRow }}" 
+        stripe="{{ stripe }}"
+        border="{{ border }}"
+        />
+    </view>  
+</view>
+
+
+
+

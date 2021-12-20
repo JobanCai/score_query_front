@@ -15,6 +15,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    domain: 'http://localhost:8090',
+    key: 'j2wAS(q2oj$A@CEQS'
   }
 })

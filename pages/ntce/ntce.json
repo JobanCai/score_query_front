@@ -2,7 +2,10 @@
   "usingComponents": {
     "van-field": "@vant/weapp/field/index",
     "van-button": "@vant/weapp/button/index",
-    "van-toast": "@vant/weapp/toast/index"
+    "van-toast": "@vant/weapp/toast/index",
+    "table-view": "../../../miniprogram_npm/miniprogram-table-component",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index"
   },
   "navigationBarTitleText": "教师资格成绩查询"
 }
